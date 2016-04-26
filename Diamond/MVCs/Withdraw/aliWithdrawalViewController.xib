@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="6300" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="aliWithdrawalViewController">
+            <connections>
+                <outlet property="acountField" destination="HRu-Fh-t7u" id="acH-KL-zmB"/>
+                <outlet property="changeBtn" destination="jiU-KE-WYf" id="JFf-Ja-7fx"/>
+                <outlet property="reAliAcountField" destination="hQm-3F-SwC" id="Ak7-5f-lBB"/>
+                <outlet property="reView" destination="mog-tE-2go" id="hi3-Ur-mX7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="withDrawlBtn" destination="m7a-py-mSL" id="zwa-5L-8Fw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNp-bl-hCX">
+                    <rect key="frame" x="0.0" y="70" width="320" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr5-Tv-z2g">
+                            <rect key="frame" x="13" y="9" width="43" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="7w9-bS-c6X"/>
+                                <constraint firstAttribute="width" constant="43" id="B3y-zM-eHa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入支付宝账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRu-Fh-t7u">
+                            <rect key="frame" x="53" y="5" width="193" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="aGO-q6-dvQ"/>
+                                <constraint firstAttribute="width" constant="193" id="zd9-Dt-QVf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiU-KE-WYf">
+                            <rect key="frame" x="254" y="4" width="59" height="31"/>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.53333333333333333" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="9Yw-iP-m61"/>
+                                <constraint firstAttribute="width" constant="59" id="OnR-oz-UiF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="修改"/>
+                            <connections>
+                                <action selector="changeBtn:" destination="-1" eventType="touchUpInside" id="qYJ-WW-afP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="jiU-KE-WYf" firstAttribute="centerY" secondItem="nNp-bl-hCX" secondAttribute="centerY" id="Dt5-bV-q9T"/>
+                        <constraint firstAttribute="trailing" secondItem="jiU-KE-WYf" secondAttribute="trailing" constant="7" id="Epv-2z-Oeh"/>
+                        <constraint firstItem="HRu-Fh-t7u" firstAttribute="leading" secondItem="Sr5-Tv-z2g" secondAttribute="trailing" constant="-3" id="L9U-hB-3BS"/>
+                        <constraint firstItem="Sr5-Tv-z2g" firstAttribute="leading" secondItem="nNp-bl-hCX" secondAttribute="leading" constant="13" id="WwP-hX-Km5"/>
+                        <constraint firstAttribute="height" constant="40" id="a1P-y3-zE7"/>
+                        <constraint firstItem="Sr5-Tv-z2g" firstAttribute="centerY" secondItem="nNp-bl-hCX" secondAttribute="centerY" id="gCD-Wd-F2a"/>
+                        <constraint firstItem="HRu-Fh-t7u" firstAttribute="centerY" secondItem="nNp-bl-hCX" secondAttribute="centerY" id="kO2-qH-2Ux"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-py-mSL">
+                    <rect key="frame" x="25" y="468" width="270" height="40"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.54117647058823526" blue="0.16078431372549021" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9kk-Vi-Qxp"/>
+                        <constraint firstAttribute="width" constant="270" id="Wyz-aT-MEG"/>
+                    </constraints>
+                    <state key="normal" title="领取"/>
+                    <connections>
+                        <action selector="withDrawalBtn:" destination="-1" eventType="touchUpInside" id="jx3-Sp-UPz"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mog-tE-2go">
+                    <rect key="frame" x="0.0" y="111" width="320" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="确认账号:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3Q-7b-5HC">
+                            <rect key="frame" x="14" y="9" width="73" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.5450980392" green="0.5450980392" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入支付宝账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hQm-3F-SwC">
+                            <rect key="frame" x="96" y="5" width="191" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="nNp-bl-hCX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PTe-AM-3og"/>
+                <constraint firstAttribute="trailing" secondItem="nNp-bl-hCX" secondAttribute="trailing" id="SJV-CX-Fyc"/>
+                <constraint firstItem="nNp-bl-hCX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="Ugz-9G-Xoo"/>
+                <constraint firstAttribute="bottom" secondItem="m7a-py-mSL" secondAttribute="bottom" constant="60" id="kLP-tx-op8"/>
+                <constraint firstItem="m7a-py-mSL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rxM-a6-CU9"/>
+            </constraints>
+            <point key="canvasLocation" x="536" y="25"/>
+        </view>
+    </objects>
+</document>

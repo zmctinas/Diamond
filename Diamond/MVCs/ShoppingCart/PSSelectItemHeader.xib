@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="PSSelectItemHeader" id="iN0-l3-epB" customClass="PSSelectItemHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjO-Gf-sgJ">
+                    <rect key="frame" x="0.0" y="260" width="320" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQE-Gx-Os1" userLabel="unVisiableButton">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                            <animations/>
+                            <connections>
+                                <action selector="touchSelectionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="96u-h1-Vhd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyG-jh-XkJ" userLabel="店铺BUTTON">
+                            <rect key="frame" x="42" y="9" width="171" height="30"/>
+                            <animations/>
+                            <connections>
+                                <action selector="touchShopButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="wNz-ta-RnO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuB-Ry-Ic2">
+                            <rect key="frame" x="12" y="13" width="22" height="22"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="96S-H7-HH6"/>
+                                <constraint firstAttribute="width" constant="22" id="Yoc-wx-g6g"/>
+                                <constraint firstAttribute="width" constant="30" id="f1H-Ss-fjm"/>
+                                <constraint firstAttribute="height" constant="30" id="zwl-j8-axP"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="DM_Unselected_icon">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="f1H-Ss-fjm"/>
+                                    <exclude reference="zwl-j8-axP"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="touchSelectionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="jQg-kz-wP5"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商家: 张山风的店阿斯顿放阿斯蒂芬阿斯顿发送到阿斯蒂芬阿斯蒂芬阿斯顿放" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuj-T3-Vxs">
+                            <rect key="frame" x="42" y="9" width="151" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="170-9z-JjI">
+                            <rect key="frame" x="231" y="0.0" width="81" height="48"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title=" 联系卖家" image="shoppingcart_btn_lianxi">
+                                <color key="titleColor" red="1" green="0.60784313729999995" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="touchCallSellerButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="ILD-1F-fjO"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uploadphoto_btn_jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="zMZ-aQ-uhg">
+                            <rect key="frame" x="198" y="11" width="15" height="25"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="iXw-y4-hWU"/>
+                                <constraint firstAttribute="height" constant="25" id="ter-vy-lk2"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="zuj-T3-Vxs" secondAttribute="centerY" id="4Me-FQ-dCs"/>
+                        <constraint firstAttribute="bottom" secondItem="170-9z-JjI" secondAttribute="bottom" id="5Ch-YF-LG4"/>
+                        <constraint firstItem="gQE-Gx-Os1" firstAttribute="top" secondItem="qjO-Gf-sgJ" secondAttribute="top" id="6oP-PN-Bnc"/>
+                        <constraint firstItem="qyG-jh-XkJ" firstAttribute="bottom" secondItem="zuj-T3-Vxs" secondAttribute="bottom" id="8kA-FN-DVD"/>
+                        <constraint firstItem="qyG-jh-XkJ" firstAttribute="leading" secondItem="zuj-T3-Vxs" secondAttribute="leading" id="AGH-C4-fGG"/>
+                        <constraint firstAttribute="trailing" secondItem="170-9z-JjI" secondAttribute="trailing" constant="8" id="Axk-df-BHR"/>
+                        <constraint firstAttribute="height" constant="48" id="Hqu-aD-oY4"/>
+                        <constraint firstAttribute="bottom" secondItem="gQE-Gx-Os1" secondAttribute="bottom" id="Ieg-eH-QsB"/>
+                        <constraint firstAttribute="centerY" secondItem="170-9z-JjI" secondAttribute="centerY" id="McR-8D-1pJ"/>
+                        <constraint firstItem="170-9z-JjI" firstAttribute="top" secondItem="qjO-Gf-sgJ" secondAttribute="top" id="Rth-K1-W1q"/>
+                        <constraint firstItem="zuj-T3-Vxs" firstAttribute="leading" secondItem="JuB-Ry-Ic2" secondAttribute="trailing" constant="8" id="SFg-z7-0v0"/>
+                        <constraint firstAttribute="centerY" secondItem="zMZ-aQ-uhg" secondAttribute="centerY" id="UHA-Qq-AUl"/>
+                        <constraint firstItem="170-9z-JjI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zMZ-aQ-uhg" secondAttribute="trailing" constant="18" id="XL7-QW-leM"/>
+                        <constraint firstItem="zMZ-aQ-uhg" firstAttribute="leading" secondItem="zuj-T3-Vxs" secondAttribute="trailing" constant="5" id="aik-fX-SEY"/>
+                        <constraint firstAttribute="trailing" secondItem="gQE-Gx-Os1" secondAttribute="trailing" id="cXi-Et-Jum"/>
+                        <constraint firstAttribute="centerY" secondItem="JuB-Ry-Ic2" secondAttribute="centerY" id="g4N-I8-a40"/>
+                        <constraint firstItem="gQE-Gx-Os1" firstAttribute="leading" secondItem="qjO-Gf-sgJ" secondAttribute="leading" id="gBI-7b-WMX"/>
+                        <constraint firstItem="qyG-jh-XkJ" firstAttribute="trailing" secondItem="zMZ-aQ-uhg" secondAttribute="trailing" id="iOQ-9y-Lho"/>
+                        <constraint firstItem="JuB-Ry-Ic2" firstAttribute="leading" secondItem="qjO-Gf-sgJ" secondAttribute="leading" constant="12" id="suD-Sr-OLa"/>
+                        <constraint firstItem="qyG-jh-XkJ" firstAttribute="top" secondItem="zuj-T3-Vxs" secondAttribute="top" id="vwF-qO-EbL"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="McR-8D-1pJ"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qjO-Gf-sgJ" secondAttribute="trailing" id="YrG-10-aCE"/>
+                <constraint firstAttribute="centerY" secondItem="qjO-Gf-sgJ" secondAttribute="centerY" id="jHb-sN-DCg"/>
+                <constraint firstItem="qjO-Gf-sgJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kDo-QF-Fvs"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="selectionButton" destination="JuB-Ry-Ic2" id="sBG-WB-BOo"/>
+                <outlet property="shopNameLabel" destination="zuj-T3-Vxs" id="y3H-a5-r3s"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="DM_Unselected_icon" width="22" height="22"/>
+        <image name="shoppingcart_btn_lianxi" width="21" height="21"/>
+        <image name="uploadphoto_btn_jiantou" width="7" height="12"/>
+    </resources>
+</document>

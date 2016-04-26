@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="recordcell" rowHeight="66" id="KGk-i7-Jjw" customClass="recordListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体现单号:123456678865" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvK-kE-RLf">
+                        <rect key="frame" x="8" y="8" width="189" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="189" id="3dZ-X7-LQo"/>
+                            <constraint firstAttribute="height" constant="21" id="CSe-vf-OI4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-04-15 15:30 提现到支付宝" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH7-XM-VkE">
+                        <rect key="frame" x="8" y="33" width="220" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="220" id="PrS-RO-bPP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.65490196078431373" green="0.6588235294117647" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="600000000元" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ott-yd-ZIb">
+                        <rect key="frame" x="205" y="8" width="107" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="107" id="iFD-7O-ZZW"/>
+                            <constraint firstAttribute="height" constant="21" id="qUO-Wb-M7X"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在操作" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCJ-fk-b1l">
+                        <rect key="frame" x="235" y="33" width="77" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="77" id="5Rv-e6-Ff3"/>
+                            <constraint firstAttribute="height" constant="21" id="Rvl-ss-4pY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.65490196078431373" green="0.6588235294117647" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Rvl-ss-4pY"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OH7-XM-VkE" firstAttribute="top" secondItem="nvK-kE-RLf" secondAttribute="bottom" constant="4" id="Cfy-bz-FJl"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="nvK-kE-RLf" secondAttribute="leading" id="FHj-ha-en9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yCJ-fk-b1l" secondAttribute="trailing" id="IXJ-Lw-SMT"/>
+                    <constraint firstAttribute="topMargin" secondItem="Ott-yd-ZIb" secondAttribute="top" id="JFN-Cl-GO1"/>
+                    <constraint firstAttribute="topMargin" secondItem="nvK-kE-RLf" secondAttribute="top" id="UeK-GJ-5sK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OH7-XM-VkE" secondAttribute="bottom" constant="-3" id="aLY-MW-VB3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ott-yd-ZIb" secondAttribute="trailing" id="cop-IF-L7y"/>
+                    <constraint firstItem="yCJ-fk-b1l" firstAttribute="top" secondItem="Ott-yd-ZIb" secondAttribute="bottom" constant="4" id="d5w-K2-pxv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="yCJ-fk-b1l" secondAttribute="bottom" constant="-3" id="oSP-i0-f7W"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="OH7-XM-VkE" secondAttribute="leading" id="p2d-FM-gd5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="cashLabel" destination="Ott-yd-ZIb" id="NiL-ag-EDb"/>
+                <outlet property="messageLabel" destination="OH7-XM-VkE" id="o9Q-32-upI"/>
+                <outlet property="statusLabel" destination="yCJ-fk-b1l" id="SmO-SP-T8G"/>
+                <outlet property="take_cash_noLabel" destination="nvK-kE-RLf" id="xoC-bg-acj"/>
+            </connections>
+            <point key="canvasLocation" x="394" y="213"/>
+        </tableViewCell>
+    </objects>
+</document>
