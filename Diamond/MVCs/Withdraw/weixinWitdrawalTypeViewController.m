@@ -61,11 +61,13 @@
 {
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(receiveNotification:) name:EXTRACT_MONEY object:nil];
 }
-
+//
 -(void)receiveNotification:(NSNotification*)info
 {
+
     if ([info.name isEqualToString:EXTRACT_MONEY]) {
         animotionViewController* animotion = [[animotionViewController alloc]initWithNibName:@"animotionViewController" bundle:nil];
+        animotion.vc = self;
         animotion.modalPresentationStyle = UIModalPresentationOverFullScreen;
         animotion.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         [self presentViewController:animotion animated:YES completion:^{

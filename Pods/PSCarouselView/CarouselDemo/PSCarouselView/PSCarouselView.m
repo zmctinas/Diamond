@@ -53,8 +53,11 @@
     if (self.isNeedRefresh)
     {
         //最左边一张图其实是最后一张图，因此移动到第二张图，也就是imageURL的第一个URL的图。
+        if ([self.imageURLs count])
+        {
         [self scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
-        self.needRefresh = NO;
+            self.needRefresh = NO;
+        }
     }
     // layoutSubviews 仅仅会lay out 当前屏幕的View.所以要先滚动位置，然后调用layoutSubViews;
 
@@ -96,6 +99,10 @@
 
 - (void)moveToNextPage
 {
+    if (![self.imageURLs count])
+    {
+        return;
+    }
     NSIndexPath *currentIndexPath = [self indexPathForItemAtPoint:self.contentOffset];
     NSIndexPath *nextIndexPath = [NSIndexPath indexPathForItem:currentIndexPath.item + 1
                                                      inSection:currentIndexPath.section];

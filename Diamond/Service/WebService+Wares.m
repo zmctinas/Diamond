@@ -109,6 +109,7 @@
             {
                 if (![dataDic isEqual:[NSNull null]])
                 {
+                    NSLog(@"%@",JSON);
                     NSArray *wares = [WaresEntity objectArrayWithKeyValuesArray:dataDic];
                     completion(YES,nil,wares);
                 }

@@ -2041,7 +2041,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cg-ww-4AC">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5cg-ww-4AC">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xey-Lv-Sb1">
@@ -5430,11 +5430,11 @@
         <image name="typeimage0" width="39" height="39"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XIM-I8-Lpf"/>
-        <segue reference="UPQ-M8-e5J"/>
-        <segue reference="Pdx-mr-vfn"/>
-        <segue reference="zMM-hh-wUg"/>
-        <segue reference="cTy-xh-FZh"/>
         <segue reference="mAS-XG-LPI"/>
+        <segue reference="cTy-xh-FZh"/>
+        <segue reference="Pdx-mr-vfn"/>
+        <segue reference="XIM-I8-Lpf"/>
+        <segue reference="zMM-hh-wUg"/>
+        <segue reference="0rq-I5-6mM"/>
     </inferredMetricsTieBreakers>
 </document>

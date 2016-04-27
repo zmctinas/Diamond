@@ -19,6 +19,7 @@
 #import "PSShareSDKManager.h"
 #import "CLLocation+WGS_84ToGCJ_02.h"
 #import <ShareSDK/ShareSDK.h>
+#import "taokeViewController.h"
 
 @interface ShopDetailViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,ChatModelDelegate,ShopDetalViewDelegate>
 
@@ -80,6 +81,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
+    NSLog(@"%lud",(unsigned long)self.model.dataSource.count);
     return [self.model.dataSource count];
 }
 
@@ -112,6 +114,19 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    
+    WaresEntity *ware = [self.model.dataSource objectAtIndex:indexPath.item];
+    if (ware.is_taoke) {
+//        [[UIApplication sharedApplication]openURL:[NSURL URLWithString:ware.externalUrl]];
+        
+        taokeViewController * taoke = [[taokeViewController alloc]init];
+        taoke.hidesBottomBarWhenPushed = YES;
+        taoke.urlString = ware.externalUrl;
+        [self.navigationController pushViewController:taoke animated:YES];
+        return;
+    }
+    
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
     if (!self.isPreview)

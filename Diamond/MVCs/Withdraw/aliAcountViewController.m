@@ -48,6 +48,7 @@
 {
     if ([info.name isEqualToString:EXTRACT_MONEY]) {
         animotionViewController* animotion = [[animotionViewController alloc]initWithNibName:@"animotionViewController" bundle:nil];
+        animotion.vc = self;
         animotion.modalPresentationStyle = UIModalPresentationOverFullScreen;
         animotion.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         [self presentViewController:animotion animated:YES completion:^{

@@ -20,6 +20,7 @@
 
 @property (strong, nonatomic) NSString *openID;
 @property (strong, nonatomic) NSString *AlipayAccount;
+@property (strong, nonatomic) NSString *realName;
 
 
 @end
@@ -44,22 +45,30 @@
 
 -(BOOL)isFillAliTextField
 {
-    return (!IS_NULL(self.alipayTextField.text)
-            || !IS_NULL(self.realNameField.text));
+    return ((self.alipayTextField.text.length>0
+             && self.realNameField.text.length>0)
+            ||(self.alipayTextField.text.length<=0
+               && self.realNameField.text.length<=0));
 }
 
 - (IBAction)touchFinishButton:(UIBarButtonItem *)sender
 {
-    if ([self isFillTextField])
+    if ([self isFillTextField]||[self isFillAliTextField])
     {
         //TODO:给openID赋值
-        NSAssert([self.delegate respondsToSelector:@selector(conformWechatAccount:alipayAccount:)], @"必须实现ChargeAccountViewControllerDelegate");
-        [self.delegate conformWechatAccount:self.openID alipayAccount:self.alipayTextField.text];
-        [self.navigationController popViewControllerAnimated:YES];
+        if ([self isFillAliTextField]) {
+            NSAssert([self.delegate respondsToSelector:@selector(conformWechatAccount:alipayAccount:real_name:)], @"必须实现ChargeAccountViewControllerDelegate");
+            [self.delegate conformWechatAccount:self.openID alipayAccount:self.alipayTextField.text real_name:self.realNameField.text];
+            [self.navigationController popViewControllerAnimated:YES];
+        }else
+        {
+            [self showtips:@"请填写完整的支付宝账号信息"];
+        }
+        
     }
     else
     {
-        [self showtips:@"至少填一个收款账号哦"];
+        [self showtips:@"至少填一个完整的收款账号哦"];
     }
 }
 
@@ -67,13 +76,16 @@
 {
     self.wechatTextField.text = self.openID;
     self.alipayTextField.text = self.AlipayAccount;
+    self.realNameField.text = self.realName;
+    
 }
 
 #pragma mark - Public
-- (void)setupWithwechatAccount:(NSString *)wechatAccount alipay:(NSString *)alipay
+- (void)setupWithwechatAccount:(NSString *)wechatAccount alipay:(NSString *)alipay realName:(NSString *)realName
 {
     self.openID = wechatAccount;
     self.AlipayAccount = alipay;
+    self.realName = realName;
     [self updateUI];
 }
 

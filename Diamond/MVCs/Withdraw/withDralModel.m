@@ -46,6 +46,7 @@
         {
             [[NSNotificationCenter defaultCenter]postNotificationName:EXTRACT_MONEY object:nil userInfo:@{}];
         }else {
+            NSLog(@"%@",message);
             [[NSNotificationCenter defaultCenter] postNotificationName:WebServiceErrorNotification object:message];
         }
     }];

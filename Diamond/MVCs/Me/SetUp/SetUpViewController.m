@@ -125,7 +125,7 @@
 {
     ChargeAccountViewController *vc = [OrderStoryboard instantiateViewControllerWithIdentifier:[ChargeAccountViewController description]];
     vc.delegate = self;
-    [vc setupWithwechatAccount:self.entity.wchat_pay alipay:self.entity.ali_pay];
+    [vc setupWithwechatAccount:self.entity.wchat_pay alipay:self.entity.ali_pay realName:self.entity.realName];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

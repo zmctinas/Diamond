@@ -50,6 +50,10 @@
  */
 @property (nonatomic) BOOL is_open;
 /**
+ *  是否是淘宝客
+ */
+@property (nonatomic) BOOL is_taoke;
+/**
  *  是否是新铺
  */
 @property (nonatomic) BOOL is_new;

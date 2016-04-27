@@ -77,6 +77,7 @@
     {
         if (isSuccess)
         {
+            NSLog(@"%@",result);
             [self handleResult:result];
         }
     }];

@@ -50,6 +50,7 @@
 @property (nonatomic,strong) NSString *telNumber;/**< 店铺电话*/
 @property (nonatomic,strong) NSString *shop_name;
 
-
+@property (nonatomic) BOOL is_taoke;/**< 是否淘宝客*/
+@property (nonatomic,strong) NSString *externalUrl;/**< 淘宝客链接*/
 
 @end

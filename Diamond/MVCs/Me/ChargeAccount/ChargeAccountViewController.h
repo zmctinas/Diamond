@@ -19,5 +19,5 @@
 
 @property (weak, nonatomic) id<ChargeAccountViewControllerDelegate> delegate;
 
-- (void)setupWithwechatAccount:(NSString *)wechatAccount alipay:(NSString *)alipay;
+- (void)setupWithwechatAccount:(NSString *)wechatAccount alipay:(NSString *)alipay realName:(NSString*)realName;
 @end

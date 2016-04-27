@@ -86,9 +86,9 @@
     withDrawlRecodeViewController* record = [[withDrawlRecodeViewController alloc]initWithNibName:@"withDrawlRecodeViewController" bundle:nil];
     record.isRootPush = YES;
     [self.vc.navigationController pushViewController:record animated:YES];
-    [self dismissViewControllerAnimated:NO completion:^{
-        
-    }];
+//    [self dismissViewControllerAnimated:NO completion:^{
+//        
+//    }];
     
 }
 @end

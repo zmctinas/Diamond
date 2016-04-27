@@ -518,11 +518,11 @@
                         <viewControllerLayoutGuide type="bottom" id="cdS-L3-NaI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ysr-vf-GFe" userLabel="店铺类型">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uuv-Qi-3fV">
-                                <rect key="frame" x="0.0" y="14" width="375" height="886"/>
+                                <rect key="frame" x="0.0" y="14" width="375" height="653"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="11" minimumInteritemSpacing="0.0" id="sjm-Yr-6SQ">
                                     <size key="itemSize" width="85" height="64"/>
@@ -5349,7 +5349,7 @@
         <image name="uploadphoto_shanchu" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dRD-yi-yZJ"/>
+        <segue reference="iZG-2j-CRL"/>
         <segue reference="3H7-cK-JFY"/>
     </inferredMetricsTieBreakers>
 </document>

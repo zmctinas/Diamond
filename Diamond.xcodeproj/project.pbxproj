@@ -411,6 +411,8 @@
 		3BFDC4331B70E8510005A450 /* CityResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFDC4321B70E8510005A450 /* CityResponse.m */; };
 		5F546F471B79A7C400365CD1 /* AppDelegate+ShareSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F546F461B79A7C400365CD1 /* AppDelegate+ShareSDK.m */; };
 		EB2A487A9F67DE75C235A0A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA69DC9A600FD67E42E660F /* libPods.a */; };
+		EB35B8201CD09FE90098F60D /* taokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB35B81E1CD09FE90098F60D /* taokeViewController.m */; };
+		EB35B8211CD09FE90098F60D /* taokeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB35B81F1CD09FE90098F60D /* taokeViewController.xib */; };
 		EB5C7CF11CC8B46000F2B263 /* aliAcountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C7CE31CC8B46000F2B263 /* aliAcountViewController.m */; };
 		EB5C7CF21CC8B46000F2B263 /* aliAcountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB5C7CE41CC8B46000F2B263 /* aliAcountViewController.xib */; };
 		EB5C7CF31CC8B46000F2B263 /* aliWithdrawalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C7CE61CC8B46000F2B263 /* aliWithdrawalViewController.m */; };
@@ -1270,6 +1272,9 @@
 		5F546F461B79A7C400365CD1 /* AppDelegate+ShareSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ShareSDK.m"; sourceTree = "<group>"; };
 		9CA69DC9A600FD67E42E660F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0B3408EBEF7BA581855B55 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EB35B81D1CD09FE90098F60D /* taokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = taokeViewController.h; sourceTree = "<group>"; };
+		EB35B81E1CD09FE90098F60D /* taokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = taokeViewController.m; sourceTree = "<group>"; };
+		EB35B81F1CD09FE90098F60D /* taokeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = taokeViewController.xib; sourceTree = "<group>"; };
 		EB5C7CE21CC8B46000F2B263 /* aliAcountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aliAcountViewController.h; sourceTree = "<group>"; };
 		EB5C7CE31CC8B46000F2B263 /* aliAcountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aliAcountViewController.m; sourceTree = "<group>"; };
 		EB5C7CE41CC8B46000F2B263 /* aliAcountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = aliAcountViewController.xib; sourceTree = "<group>"; };
@@ -2477,6 +2482,9 @@
 				3B308E881B6A1D7500201969 /* ShopDetailModel.m */,
 				3B1A95421B6B52D000033805 /* ShopDetailView.h */,
 				3B1A95431B6B52D000033805 /* ShopDetailView.m */,
+				EB35B81D1CD09FE90098F60D /* taokeViewController.h */,
+				EB35B81E1CD09FE90098F60D /* taokeViewController.m */,
+				EB35B81F1CD09FE90098F60D /* taokeViewController.xib */,
 			);
 			name = Detail;
 			sourceTree = "<group>";
@@ -3447,6 +3455,7 @@
 				3533151B1B7A447D0074C5BB /* city.json in Resources */,
 				EB5C7CF21CC8B46000F2B263 /* aliAcountViewController.xib in Resources */,
 				3B46CAEE1B61023F00DE70A6 /* MWPhotoBrowser.bundle in Resources */,
+				EB35B8211CD09FE90098F60D /* taokeViewController.xib in Resources */,
 				3BADE0D61B7B32B200B1E64F /* ShareSDKFlatShareViewUI.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3569,6 +3578,7 @@
 				3B46CAE41B61023F00DE70A6 /* PSTCollectionViewController.m in Sources */,
 				3B46CACD1B61023F00DE70A6 /* MWTapDetectingImageView.m in Sources */,
 				35DF0C6D1B552BD7003980FD /* RegisterEntity.m in Sources */,
+				EB35B8201CD09FE90098F60D /* taokeViewController.m in Sources */,
 				3B46C9ED1B6100E700DE70A6 /* MessageModelManager.m in Sources */,
 				35E83B4E1B710A6800F6E8CE /* WebService+User.m in Sources */,
 				3B46CAD61B61023F00DE70A6 /* EMSDWebImageManager.m in Sources */,

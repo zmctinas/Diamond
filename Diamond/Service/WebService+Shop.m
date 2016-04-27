@@ -108,7 +108,7 @@
             {
                 if (![dataDic isEqual:[NSNull null]])
                 {
-                    
+                    NSLog(@"%@",JSON);
                     [ShopResponseEntity setupObjectClassInArray:^NSDictionary *{
                         return @{@"data" : NSStringFromClass([Shop class]),};
                     }];
