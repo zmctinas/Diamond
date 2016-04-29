@@ -413,6 +413,8 @@
 		EB2A487A9F67DE75C235A0A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA69DC9A600FD67E42E660F /* libPods.a */; };
 		EB35B8201CD09FE90098F60D /* taokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB35B81E1CD09FE90098F60D /* taokeViewController.m */; };
 		EB35B8211CD09FE90098F60D /* taokeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB35B81F1CD09FE90098F60D /* taokeViewController.xib */; };
+		EB57910C1CD1B04100F43604 /* qrCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB57910A1CD1B04100F43604 /* qrCodeViewController.m */; };
+		EB57910D1CD1B04100F43604 /* qrCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB57910B1CD1B04100F43604 /* qrCodeViewController.xib */; };
 		EB5C7CF11CC8B46000F2B263 /* aliAcountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C7CE31CC8B46000F2B263 /* aliAcountViewController.m */; };
 		EB5C7CF21CC8B46000F2B263 /* aliAcountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB5C7CE41CC8B46000F2B263 /* aliAcountViewController.xib */; };
 		EB5C7CF31CC8B46000F2B263 /* aliWithdrawalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C7CE61CC8B46000F2B263 /* aliWithdrawalViewController.m */; };
@@ -1275,6 +1277,9 @@
 		EB35B81D1CD09FE90098F60D /* taokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = taokeViewController.h; sourceTree = "<group>"; };
 		EB35B81E1CD09FE90098F60D /* taokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = taokeViewController.m; sourceTree = "<group>"; };
 		EB35B81F1CD09FE90098F60D /* taokeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = taokeViewController.xib; sourceTree = "<group>"; };
+		EB5791091CD1B04100F43604 /* qrCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrCodeViewController.h; sourceTree = "<group>"; };
+		EB57910A1CD1B04100F43604 /* qrCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = qrCodeViewController.m; sourceTree = "<group>"; };
+		EB57910B1CD1B04100F43604 /* qrCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = qrCodeViewController.xib; sourceTree = "<group>"; };
 		EB5C7CE21CC8B46000F2B263 /* aliAcountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aliAcountViewController.h; sourceTree = "<group>"; };
 		EB5C7CE31CC8B46000F2B263 /* aliAcountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aliAcountViewController.m; sourceTree = "<group>"; };
 		EB5C7CE41CC8B46000F2B263 /* aliAcountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = aliAcountViewController.xib; sourceTree = "<group>"; };
@@ -2782,6 +2787,9 @@
 				35E5C5F41B75AEED00D0F828 /* MyWareCell.m */,
 				35E5C5F91B75CDE000D0F828 /* MyShopModel.h */,
 				35E5C5FA1B75CDE000D0F828 /* MyShopModel.m */,
+				EB5791091CD1B04100F43604 /* qrCodeViewController.h */,
+				EB57910A1CD1B04100F43604 /* qrCodeViewController.m */,
+				EB57910B1CD1B04100F43604 /* qrCodeViewController.xib */,
 			);
 			name = MyShop;
 			sourceTree = "<group>";
@@ -3422,6 +3430,7 @@
 				3BD9BF9B1C268145001B9E42 /* DMTabbar.xib in Resources */,
 				3B3431041B8DEB4900B8CEC9 /* AlipaySDK.bundle in Resources */,
 				3B43C7981C26FF5C002B1B82 /* Login.storyboard in Resources */,
+				EB57910D1CD1B04100F43604 /* qrCodeViewController.xib in Resources */,
 				3BD87FB51B96FB69004F32F5 /* OrderDetailHeaderView.xib in Resources */,
 				EB5C7CF41CC8B46000F2B263 /* aliWithdrawalViewController.xib in Resources */,
 				3B4B4B781B5E9F0C005186A2 /* PSButtonFooterView.xib in Resources */,
@@ -3769,6 +3778,7 @@
 				3BF240091B50D23800C98E35 /* NSDate+Time.m in Sources */,
 				3B46CAEB1B61023F00DE70A6 /* PSTGridLayoutItem.m in Sources */,
 				3BDA031E1B63BF4B004014E7 /* ApplyCell.m in Sources */,
+				EB57910C1CD1B04100F43604 /* qrCodeViewController.m in Sources */,
 				3B46CAD21B61023F00DE70A6 /* EMSDWebImageCompat.m in Sources */,
 				3B8484F81B7396CE00E32BDD /* PSDropCollectionCell.m in Sources */,
 				3B5305F01BBB909B0016C442 /* ChargeAccountViewController.m in Sources */,

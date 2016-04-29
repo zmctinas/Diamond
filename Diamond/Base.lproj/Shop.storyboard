@@ -2036,9 +2036,21 @@
                                                         <action selector="touchBackButton:" destination="mqP-Nu-R1n" eventType="touchUpInside" id="yey-kg-vze"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="On6-LW-bum">
+                                                    <rect key="frame" x="259" y="12" width="48" height="48"/>
+                                                    <color key="backgroundColor" red="0.50588235294117645" green="0.36078431372549019" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="48" id="ryT-4o-pm5"/>
+                                                        <constraint firstAttribute="height" constant="48" id="yaM-aa-xkx"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="qrCodeBtn:" destination="mqP-Nu-R1n" eventType="touchUpInside" id="acr-53-fw6"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="On6-LW-bum" secondAttribute="trailing" constant="12" id="5Uc-QR-MzB"/>
                                                 <constraint firstItem="LmU-ka-Rbl" firstAttribute="centerY" secondItem="Fmt-t0-C68" secondAttribute="centerY" id="7TX-Nk-PMG"/>
                                                 <constraint firstItem="LmU-ka-Rbl" firstAttribute="centerX" secondItem="Fmt-t0-C68" secondAttribute="centerX" id="9cU-ND-mMl"/>
                                                 <constraint firstAttribute="height" constant="178" id="9ca-sp-dXE"/>
@@ -2048,6 +2060,7 @@
                                                 <constraint firstItem="nHp-In-ami" firstAttribute="leading" secondItem="LmU-ka-Rbl" secondAttribute="trailing" constant="-183" id="SeY-OO-xuT"/>
                                                 <constraint firstItem="g9t-uJ-eNH" firstAttribute="leading" secondItem="Fmt-t0-C68" secondAttribute="leading" id="Ww2-EP-NOM"/>
                                                 <constraint firstItem="jdK-qd-lln" firstAttribute="leading" secondItem="Fmt-t0-C68" secondAttribute="leading" constant="12" id="YMp-RV-mHE"/>
+                                                <constraint firstItem="On6-LW-bum" firstAttribute="top" secondItem="Fmt-t0-C68" secondAttribute="top" constant="12" id="bQS-VD-tze"/>
                                                 <constraint firstItem="jdK-qd-lln" firstAttribute="top" secondItem="Fmt-t0-C68" secondAttribute="top" constant="12" id="czR-7l-HGN"/>
                                                 <constraint firstItem="nHp-In-ami" firstAttribute="top" secondItem="LmU-ka-Rbl" secondAttribute="bottom" constant="8" id="pMY-Z1-Okb"/>
                                                 <constraint firstItem="g9t-uJ-eNH" firstAttribute="top" secondItem="Fmt-t0-C68" secondAttribute="top" id="vgr-lf-gHc"/>

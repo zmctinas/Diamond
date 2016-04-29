@@ -76,6 +76,7 @@
     }
     NSLog(@"%@",postData);
     [self postWithMethodName:EXTRACT_MONEY data:postData success:^(id JSON) {
+        NSLog(@"%@",JSON);
         if ([JSON isKindOfClass:[NSDictionary class]])
         {
             int status = [[JSON objectForKey:STATUS] intValue];

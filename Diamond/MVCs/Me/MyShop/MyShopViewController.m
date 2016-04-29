@@ -21,6 +21,7 @@
 #import "WareDetailViewController.h"
 #import "ShopDetailViewController.h"
 #import "UIButton+Category.h"
+#import "qrCodeViewController.h"
 
 CGFloat const TableHeaderViewHeight = 178;
 CGFloat const StatusBarHeight = 20.0;
@@ -43,6 +44,9 @@ CGFloat const StatusBarHeight = 20.0;
 @property (nonatomic) BOOL isShowSaleGoods;
 @property (nonatomic) BOOL isEdit;
 @property (nonatomic,strong) MyWareCell *selectedCell;//选中的Cell,编辑或上下架
+
+
+- (IBAction)qrCodeBtn:(UIButton *)sender;
 
 @end
 
@@ -95,7 +99,7 @@ CGFloat const StatusBarHeight = 20.0;
         NSString *photoUrl = [Util urlStringWithPath:shopAd];
         if (photoUrl.length>0) {
             [self.photoButton setDefaultLoadingImage];
-            [self.photoButton sd_setImageWithURL:[NSURL URLWithString:photoUrl] forState:UIControlStateNormal];
+            [self.photoButton sd_setImageWithURL:[NSURL URLWithString:photoUrl] forState:UIControlStateNormal ];
         }else{
             [self.photoButton setImage:[UIImage imageNamed:@"my_button_touxiang"] forState:UIControlStateNormal];
         }
@@ -291,4 +295,15 @@ CGFloat const StatusBarHeight = 20.0;
     return _shopModel;
 }
 
+- (IBAction)qrCodeBtn:(UIButton *)sender {
+    
+    qrCodeViewController* qrCode = [[qrCodeViewController alloc]init];
+    qrCode.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    qrCode.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    qrCode.shop = [[ShopSession sharedInstance] currentShop];
+    [self presentViewController:qrCode animated:YES completion:^{
+        
+    }];
+    
+}
 @end

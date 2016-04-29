@@ -143,6 +143,7 @@
             int status = [[JSON objectForKey:STATUS] intValue];
             
             NSDictionary *dataDic = [JSON objectForKey:DATA];
+            NSLog(@"%@",dataDic);
             
             if (status == ResponseStatusSuccess)
             {
